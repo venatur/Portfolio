@@ -1,0 +1,41 @@
+{
+  "projects": [
+    {
+      "name": "VlcStreanVideo",
+      "github": "https://github.com/venatur/VlcStreamVideo",
+      "date": "Dic 2020",
+      "short": "Xamarin application with vlc libraries, does streaming trough a video player with tcp/ip protocols",
+      "status": "complete",
+      "link": "xamarinapp",
+      "weight": 7,
+      "tags": [
+        "Android",
+        "media",
+        "C#",
+        "Xamarin"
+      ],
+      "videos": [
+        "<iframe width=\"1351\" height=\"533\" src=\"https://github.com/venatur/VlcStreamVideo\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
+      ],
+      "photos": [
+        "https://salmorejogeek.files.wordpress.com/2016/05/vlc.jpg"
+      ]
+    },
+    {
+      "name": "COVID-19 core system",
+      "link": "covid19",
+      "date": "Aug 19 - Ene 21",
+      "short": "Python system that retrives daily data from COVID-19 Mexico",
+      "weight": 9,
+      "tags": [
+        "Python",
+        "Postgres",
+        "Data warehouse"
+      ],
+      "photos": [
+        "https://salmorejogeek.files.wordpress.com/2016/05/vlc.jpg"
+      ]
+    }
+
+  ]
+}

@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block head %}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+<link type="text/css" rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<script src='https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.1/typed.min.js'></script>
+
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename = 'css/home.css') }}">
+<script type="text/javascript" src="{{ url_for('static', filename = 'js/home.js') }}"></script>
+{% endblock %}
+
+{% block body %}
+<div class="container">
+    <div class="wrapper fixed-wrapper">
+        <section id="terminal">
+            <div id="terminal-container">
+                <div class="terminal">
+                    <div class="window-title">
+                        <div class="win-buttons">
+                            <a id="close" class="button" href="#"></a>
+                            <a id="min" class="button" href="#"></a>
+                            <a id="max" class="button" href="#"></a>
+                        </div>
+                        <span class="title">oh-my-zsh</span>
+                    </div>
+                    <div class="message">
+                        <span class='prompt'><span class='user'>creator</span><span class="at">@</span><span
+                                class="path">/home/carlos/</span>><span class="caret">$</span></span>
+                        <span class="typed"></span>
+                        <form>><span class="caret">$</span>&nbsp;<input type="text" name="response"/></form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <div class="wrapper scroll-wrapper">
+        <div class="top-text">
+            <p class="text-title desktop-view">Carlos</p>
+            <p class="text-title desktop-view">Espinoza</p>
+            <p class="text-title mobile-view">Carlos Espinoza</p>
+            <div class="social-icons">
+                <a target="_blank" href="https://github.com/venatur">
+                    <img class="title-logo" src="{{url_for('static',filename='images/github.svg')}}">
+                </a>
+                <a target="_blank" href="https://www.linkedin.com/in/carlos-espinoza-garcia-250b33132/">
+                    <img class="title-logo" src="{{url_for('static',filename='images/linkedin-logo.svg')}}">
+                </a>
+                <a target="_blank" href="https://twitter.com/caldos69">
+                    <img class="title-logo" src="{{url_for('static',filename='images/twitter.svg')}}/">
+                </a>
+
+            </div>
+        </div>
+        <div class="middle-text">
+            <p class="text-content">Hi, im a dreamer that believes on tecnology for live in a better world.</p>
+            <p class="text-content">
+                I live in Mexicali, Baja California Mexico, I´m 32 years old. I’m Studying a master degree in
+                Data science applied on precision agriculture.
+                I’m working in my Covid-sars2 project, it’s about to study all data gathered from federation and expose it to scientific
+                groups with analysis purposes.</p>
+
+            <p class="text-content">I studied my masters at <a href="http://institutodeingenieria.uabc.mx/">Instituto de ingenieria de Baja California</a>.
+            </p>
+
+            <p class="text-content">One of my best project is an applications build in python to retrive all national data related to COVID-19
+            besides i developed an API to serve  the results to anyone that knows JSON and XML</p>
+
+
+            <p class="text-content">You can find me on <a href="https://www.linkedin.com/in/carlos-espinoza-garcia-250b33132/">LinkedIn</a>,
+                or email me <a href="mailto:rish.extra@gmail.com?Subject=Hello%20Rish%20-from-website" target="_top">here</a>.
+            </p>
+
+            <p class="text-content">Let's get in touch!</p>
+
+            <p class="text-content">Carlos Espinoza</p>
+
+            <p class="text-content"><a href="timeline">For more about me, my timeline, read on here.</a></p>
+
+            <br>
+        </div>
+    </div>
+</div>
+{% endblock %}
