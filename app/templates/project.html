@@ -6,11 +6,13 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
 {% endblock %}
 
 {% block body %}
 <div class="container">
     <div class="wrapper fixed-wrapper">
+
         {% if 'photos' in project or 'videos' in project %}
         <div>
             <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false" ;>
@@ -72,14 +74,17 @@
             <div class="links">
                 {% if 'github' in project %}
                 <div><a class="github" href={{project['github']}}>Find on Github</a></div>
+                <p>hola github</p>
                 {% elif 'arxiv' in project %}
                 <div><a class="github" href={{project['arxiv']}}>View on Arxiv</a></div>
                 {% elif 'playstore' in project %}
                 <div><a class="github" href={{project['playstore']}}>View on Google Play</a></div>
                 {% endif %}
+                {{ project['short'] }}
+                <p>hola</p>
             </div>
         </div>
-        <div class="content">{{ project['description'] | safe }}</div>
+        <div class="content">{{ project['short'] | safe }}</div>
     </div>
 
 </div>

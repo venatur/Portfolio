@@ -2,16 +2,13 @@ from . import portfolio
 from flask import jsonify, make_response, send_file, Response, request, stream_with_context
 import json
 from flask import render_template, url_for, redirect
-from flask import Flask
-from flask_nav import Nav
-from flask_nav.elements import Navbar, View
 import os
 import io
 
 static_folder_pro = "../static/projects/projects.json"
 
 
-@portfolio.route('/')
+@portfolio.route('/home')
 def home():
 
     return render_template("home.html", title='home', username="carlos")
@@ -53,7 +50,7 @@ def project(title):
 
     if in_project is not None:
         selected = in_project
-
-
-
+        #selected['description'] = io.open(get_static_file('static/projects/%s/%s.html' % (selected, selected)),
+         #                                 encoding='utf-8').read()
+        #print(selected)
     return render_template('project.html', project=selected)

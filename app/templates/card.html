@@ -12,7 +12,7 @@
                 <div class="md-chips container-inner">
                     {% for tag in project['tags'] %}
                     <div class="md-chip md-chip-clickable"><a class="md-chip-link"
-                                                              href="/projects?tags={{tag}}">{{tag}}</a>
+                                                              href="projects/{{ project['link'] }}?tags={{tag}}">{{tag}}</a>
                     </div>
                     {% endfor %}
                 </div>

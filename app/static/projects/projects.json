@@ -14,11 +14,8 @@
         "C#",
         "Xamarin"
       ],
-      "videos": [
-        "<iframe width=\"1351\" height=\"533\" src=\"https://github.com/venatur/VlcStreamVideo\" frameborder=\"0\" allow=\"autoplay; encrypted-media\" allowfullscreen></iframe>"
-      ],
       "photos": [
-        "https://salmorejogeek.files.wordpress.com/2016/05/vlc.jpg"
+        "/static/projects/xamarinapp/image1.png"
       ]
     },
     {
@@ -33,7 +30,7 @@
         "Data warehouse"
       ],
       "photos": [
-        "https://salmorejogeek.files.wordpress.com/2016/05/vlc.jpg"
+        "/static/projects/covid19/img-1.png"
       ]
     }
 
