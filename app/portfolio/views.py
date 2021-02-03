@@ -8,7 +8,7 @@ import io
 static_folder_pro = "../static/projects/projects.json"
 
 
-@portfolio.route('/home')
+@portfolio.route('/')
 def home():
 
     return render_template("home.html", title='home', username="carlos")
