@@ -1,0 +1,29 @@
+{
+  "timeline": [
+    {
+      "name": "SAITBC lead-developer",
+      "desc": "Developer of ERP and CRM soultions for end users",
+      "bdate": "04/09/14",
+      "edate": "06/06/16",
+      "type": "work",
+      "year": "2014"
+    },
+    {
+      "name": "Xquadrone project manager",
+      "desc": "Developer of drone solutions",
+      "bdate": "Dic 2020",
+      "edate": "Xamarin application with vlc libraries, does streaming trough a video player with tcp/ip protocols",
+      "type": "complete",
+      "year": "2016"
+    },
+    {
+      "name": "SAITBC COO",
+      "desc": "chief of operations",
+      "bdate": "Dic 2020",
+      "edate": "Xamarin application with vlc libraries, does streaming trough a video player with tcp/ip protocols",
+      "type": "complete",
+      "year": "2009"
+    }
+
+  ]
+}

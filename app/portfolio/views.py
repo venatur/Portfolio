@@ -3,9 +3,10 @@ from flask import jsonify, make_response, send_file, Response, request, stream_w
 import json
 from flask import render_template, url_for, redirect
 import os
-import io
+from datetime import datetime
 
 static_folder_pro = "../static/projects/projects.json"
+static_folder_tln = "../static/timeline/timeline.json"
 
 
 @portfolio.route('/')
@@ -54,3 +55,16 @@ def project(title):
          #                                 encoding='utf-8').read()
         #print(selected)
     return render_template('project.html', project=selected)
+
+@portfolio.route('/timeline/')
+def timeline():
+    data = get_static_json(static_folder_tln)['timeline']
+    data.sort(key=order_timeline, reverse=True)
+    return render_template('timeline.html', timeline=data)
+
+
+def order_timeline(timeline):
+    try:
+        return int(timeline['year'])
+    except KeyError:
+        return 0

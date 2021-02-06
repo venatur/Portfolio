@@ -42,18 +42,15 @@
   }
 
 .card-image {
-    max-width:300px;
+    max-width:400px;
     display: flex;
     justify-content: center;
-    object-fit: cover;
 }
 
 .card .card-image img.card-image {
     max-height: 180px;
     min-height: 180px;
     width: auto;
-    height: auto;
-    object-fit: cover;
 }
 
 .status {
