@@ -51,9 +51,6 @@ def project(title):
 
     if in_project is not None:
         selected = in_project
-        #selected['description'] = io.open(get_static_file('static/projects/%s/%s.html' % (selected, selected)),
-         #                                 encoding='utf-8').read()
-        #print(selected)
     return render_template('project.html', project=selected)
 
 @portfolio.route('/timeline/')
