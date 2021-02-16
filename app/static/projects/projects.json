@@ -39,6 +39,7 @@
       "date": "Ene 21",
       "short": "Portfolio about me and description about my exprience on Dev field",
       "weight": 9,
+      "github": "https://github.com/venatur/Portfolio",
       "tags": [
         "Python",
         "JSON",
