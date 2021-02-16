@@ -32,6 +32,22 @@
       "photos": [
         "/static/projects/covid19/img-1.png"
       ]
+    },
+    {
+      "name": "Portfolio",
+      "link": "portfolio",
+      "date": "Ene 21",
+      "short": "Portfolio about me and description about my exprience on Dev field",
+      "weight": 9,
+      "tags": [
+        "Python",
+        "JSON",
+        "Flask",
+        "HTML"
+      ],
+      "photos": [
+        "/static/projects/portfolio/img-1.png"
+      ]
     }
 
   ]
